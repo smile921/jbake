@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JBake</title>
-    <link>http://jbake.org</link>
-    <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://smile921.github.io/jbake</link>
+    <atom:link href="https://smile921.github.io/jbake/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>星期二, 27 十月 2015 20:08:19 +0800</pubDate>
-    <lastBuildDate>星期二, 27 十月 2015 20:08:19 +0800</lastBuildDate>
+    <pubDate>星期二, 27 十月 2015 20:16:21 +0800</pubDate>
+    <lastBuildDate>星期二, 27 十月 2015 20:16:21 +0800</lastBuildDate>
 
     <item>
       <title>  Sublime Text 快捷键简洁版</title>
-      <link>http://jbake.org/blog/2015-10-27-Sublime Text 快捷键简洁版.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-27-Sublime Text 快捷键简洁版.html</link>
       <pubDate>星期二, 27 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-27-Sublime Text 快捷键简洁版.html</guid>
       	<description>
@@ -20,7 +20,7 @@
     </item>
     <item>
       <title> 作者结合自身总结的前端入门方法 </title>
-      <link>http://jbake.org/blog/2015-10-27-作者结合自身总结的前端入门方法.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-27-作者结合自身总结的前端入门方法.html</link>
       <pubDate>星期二, 27 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-27-作者结合自身总结的前端入门方法.html</guid>
       	<description>
@@ -295,7 +295,7 @@
     </item>
     <item>
       <title> 前端工作面试收集</title>
-      <link>http://jbake.org/blog/2015-10-27-前端工作面试问题.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-27-前端工作面试问题.html</link>
       <pubDate>星期二, 27 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-27-前端工作面试问题.html</guid>
       	<description>
@@ -505,7 +505,7 @@ console.log(&amp;#39;three&amp;#39;);
     </item>
     <item>
       <title> 前端工作面试收集2</title>
-      <link>http://jbake.org/blog/2015-10-27-前端工作面试问题2-.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-27-前端工作面试问题2-.html</link>
       <pubDate>星期二, 27 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-27-前端工作面试问题2-.html</guid>
       	<description>
@@ -2613,7 +2613,7 @@ EventUtil.on(nav, &amp;#39;click&amp;#39;, function (event) {
     </item>
     <item>
       <title> RedHat 6.x 安装mysql 5.7.9 实战</title>
-      <link>http://jbake.org/blog/2015-10-26-RedHat 6.x 安装mysql 5.7.9 实战.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-26-RedHat 6.x 安装mysql 5.7.9 实战.html</link>
       <pubDate>星期一, 26 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-26-RedHat 6.x 安装mysql 5.7.9 实战.html</guid>
       	<description>
@@ -2679,7 +2679,7 @@ enabled=1
     </item>
     <item>
       <title>万能JAva</title>
-      <link>http://jbake.org/blog/2015-10-24-万能的JAVA.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-24-万能的JAVA.html</link>
       <pubDate>星期六, 24 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-24-万能的JAVA.html</guid>
       	<description>
@@ -2713,7 +2713,7 @@ enabled=1
     </item>
     <item>
       <title>  不要复制粘贴，重新敲一遍</title>
-      <link>http://jbake.org/blog/2015-10-24-不要粘贴复制.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-24-不要粘贴复制.html</link>
       <pubDate>星期六, 24 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-24-不要粘贴复制.html</guid>
       	<description>
@@ -2722,7 +2722,7 @@ enabled=1
     </item>
     <item>
       <title>Awesome Haskell</title>
-      <link>http://jbake.org/blog/2015-10-23-awesome-haskell.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-23-awesome-haskell.html</link>
       <pubDate>星期五, 23 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-23-awesome-haskell.html</guid>
       	<description>
@@ -2731,7 +2731,7 @@ enabled=1
     </item>
     <item>
       <title>职业德州扑克手看交易--风险的三个层次(转)</title>
-      <link>http://jbake.org/blog/2015-10-19-职业德州扑克手看交易--风险的三个层次.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-10-19-职业德州扑克手看交易--风险的三个层次.html</link>
       <pubDate>星期一, 19 十月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-10-19-职业德州扑克手看交易--风险的三个层次.html</guid>
       	<description>
@@ -2740,7 +2740,7 @@ enabled=1
     </item>
     <item>
       <title>awesome android performance!</title>
-      <link>http://jbake.org/blog/2015-09-20-awesome-android-performance.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-09-20-awesome-android-performance.html</link>
       <pubDate>星期二, 29 九月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-09-20-awesome-android-performance.html</guid>
       	<description>
@@ -2828,7 +2828,7 @@ enabled=1
     </item>
     <item>
       <title>Android Dev Tools    !</title>
-      <link>http://jbake.org/blog/2015-09-21-AndroidDevTools.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-09-21-AndroidDevTools.html</link>
       <pubDate>星期二, 29 九月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-09-21-AndroidDevTools.html</guid>
       	<description>
@@ -2882,7 +2882,7 @@ enabled=1
     </item>
     <item>
       <title>CSS 学习笔记之一</title>
-      <link>http://jbake.org/blog/2015-08-11-css-note.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-08-11-css-note.html</link>
       <pubDate>星期二, 11 八月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-08-11-css-note.html</guid>
       	<description>
@@ -2917,7 +2917,7 @@ enabled=1
     </item>
     <item>
       <title>WIFI WPS 破解大法</title>
-      <link>http://jbake.org/blog/2015-08-10-Pixiewps-tool.html</link>
+      <link>https://smile921.github.io/jbake/blog/2015-08-10-Pixiewps-tool.html</link>
       <pubDate>星期一, 10 八月 2015 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2015-08-10-Pixiewps-tool.html</guid>
       	<description>
@@ -3109,7 +3109,7 @@ Example:
     </item>
     <item>
       <title>Fourth Post</title>
-      <link>http://jbake.org/blog/2013/fourth-post.html</link>
+      <link>https://smile921.github.io/jbake/blog/2013/fourth-post.html</link>
       <pubDate>星期四, 17 十月 2013 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2013/fourth-post.html</guid>
       	<description>
@@ -3139,7 +3139,7 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>Third Post</title>
-      <link>http://jbake.org/blog/2013/third-post.html</link>
+      <link>https://smile921.github.io/jbake/blog/2013/third-post.html</link>
       <pubDate>星期四, 26 九月 2013 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2013/third-post.html</guid>
       	<description>
@@ -3169,7 +3169,7 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>Second Post</title>
-      <link>http://jbake.org/blog/2013/second-post.html</link>
+      <link>https://smile921.github.io/jbake/blog/2013/second-post.html</link>
       <pubDate>星期日, 25 八月 2013 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2013/second-post.html</guid>
       	<description>
@@ -3182,7 +3182,7 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>First Post</title>
-      <link>http://jbake.org/blog/2013/first-post.html</link>
+      <link>https://smile921.github.io/jbake/blog/2013/first-post.html</link>
       <pubDate>星期三, 24 七月 2013 00:00:00 +0800</pubDate>
       <guid isPermaLink="false">blog/2013/first-post.html</guid>
       	<description>
