@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>  不要复制粘贴，重新敲一遍</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../">JBake</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../feed.xml">Subscribe</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>  不要复制粘贴，重新敲一遍</h1>
+	</div>
+
+	<p><em>24 十月 2015</em></p>
+
+	<p><p>在今天这个时代，谷歌和 <a href="http://stackoverflow.com/">Stack Overflow</a> 几乎是每一位开发者最重要的工具。<br/>但是近一段时间，Stack Overflow 遭到了一些貌似无理的指责。一方面，这是由于其看似怪异且有时稍欠温和的<br/><a href="https://medium.com/@johnslegers/the-decline-of-stack-overflow-7cb69faa575d">审核政策</a>。<br/>但是还有一些更具针对性的批评则是，一种被人们戏称为 <a href="https://www.christianheilmann.com/2015/07/17/the-full-stackoverflow-developer/">full Stack Overflow developer</a><br/> 的现象正在逐步升温。</p><p>简单地说，那些被人们如此称谓的程序员，就像代码搬运工一样，他们编写软件的过程，就是不断地从 Stack Overflow 的答案中复制和粘贴大量代码。<br/>他们的工作效率或许很高，但是他们对于所面临的问题以及正在采用的解决方案本身，缺少根本性的理解。</p><p>当然，并不是每一类的复制粘贴行为都应该受到嘲讽。我在很大程度上可以确定，阅读这篇文章的绝大多数开发者（包括我本人在内）对于这种一字不差的复制粘贴行为，至少都会抱有一点儿愧疚感。哎，我们之所以这样做的原因，可能是我们对这些代码的工作原理缺乏兴趣。毕竟不是每一项技术都具有原生的趣味性，而且，最后期限有时真的非常重要。</p><p>如果事实真是这样，这是否意味着：我们都将逐渐蜕变成 full Stack Overflow developers？这简直太糟糕了！我们当然不愿意看到这种事情的发生。</p><p><strong>有效缓解策略</strong></p><p>在你工作的时候，如果发觉自己正从 Stack Overflow 搜刮大量代码，在你想要完全切断与互联网的连接之前，不妨考虑采用下面这个技巧：</p><p><strong>不要使用粘贴板。不要复制粘贴。相反，你应该将这些代码重新敲击输入一遍</strong>。</p><p>是的，这肯定会花费更多时间。<br/>相对于操作 Ctrl+C/Ctrl+V 来说，这个过程一定非常繁琐。<br/>从表面上看，你会觉得这样做没有任何意义：如果最终结果都是一样，<br/>为什么非要兴师动众地把现成的代码一个接一个地重新敲一遍呢？这样做的价值到底是什么呢？</p><p><strong>基本理由与原理</strong></p><p>我认为，这样做的理由不仅非常充分，而且意义重大：</p><p>事实上，正是由于重新输入要比直接复制粘贴慢得多，才使得这件事情变得有意义起来。<br/>如果你不用粘贴板，你就不太可能选择谷歌给出的第一个来自 Stack Overflow 的答案。<br/>你将会比较不同的解决办法。在这种情况下，你理所当然地倾向于选择那些更短更简洁的代码。<br/>当你敲击这些代码的时候，你的大脑不可能什么都不想。不管你愿意与否，在这个过程中，<br/>你一定会耳濡目染地吸收一些知识和技巧，因为当代码从浏览器转移到你的编辑器或 IDE 时，一定会从你的指尖滑过，从你的眼前飘过。<br/>你的大脑会在潜意识里对这些一小片一小片的信息发生兴趣，并且情不自禁地想要理解它们。<br/>即使你主观上没想这样做，你还是会学到不少东西。</p><p>然而更重要的是，你所输入的这些代码不可能是原来代码片段的完美复制品。<br/>在这个过程中，哪怕只是为了满足某种特定编码风格的目的，你都会不可避免地对它们做出必要的调整。</p><p>其实，这样做的效果与大幅改变这些代码的效果几乎一样。<br/>你会用一些工具函数把一些代码替换掉，你会为了让代码更易读，重新编排代码的样式，你会增加注释，或者，抽取和编写新的函数，使其更具有自描述性。<br/>为了方便重用这些代码，你甚至还可能改进和重构它们。</p><p>然后，这些你刚刚敲入的代码就不再是你从互联网上找到的那些代码了，它们将真正成为你的代码。</p><p><em>作者：<a href="http://xion.io/page/about.html#about">Karol Kuczmarski</a>，软件工程师，就职于谷歌，生活在旧金山。</em></p><p><em>原文：<a href="http://xion.io/post/programming/dont-copy-paste-retype.html">Don’t Copy &amp; Paste. Retype.</a></em></p><p><em>感谢：<a href="http://cafe.fujiji.com/u/qingniu">Qingniu</a> 帮助审阅及完成校对。</em></p></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0-SNAPSHOT</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    
+  </body>
+</html>

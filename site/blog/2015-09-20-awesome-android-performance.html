@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>awesome android performance!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../">JBake</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../feed.xml">Subscribe</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>awesome android performance!</h1>
+	</div>
+
+	<p><em>29 九月 2015</em></p>
+
+	<p><h1>awesome-android-performance</h1><p>This is a list of awesome Android tutorials, videos and tools for performance optimization</p><p>---</p><h2>View</h2>
+<ul>
+  <li><a href="https://sriramramani.wordpress.com/2012/07/25/infamous-viewholder-pattern/">Infamous ViewHolder Pattern</a> - ViewHolder pattern in ListView</li>
+  <li><a href="https://sriramramani.wordpress.com/2013/03/25/view-reduction/">View Reduction</a> - use Compound Drawables to increase performance</li>
+  <li><a href="http://instagram-engineering.tumblr.com/post/114508858967/improving-comment-rendering-on-android">Improving Comment Rendering on Android</a> - Instgram's post on TextView Performance</li>
+  <li><a href="https://sriramramani.wordpress.com/2015/05/06/custom-viewgroups/">Custom ViewGroups</a> - a Facebook Engineer's artcile on Custom ViewGroup to increase performance</li>
+</ul><h2>Graphics</h2>
+<ul>
+  <li><a href="http://android-developers.blogspot.com/2011/03/android-30-hardware-acceleration.html">Android 3.0 Hardware Acceleration</a></li>
+  <li><a href="https://developer.android.com/tools/performance/debug-gpu-overdraw/index.html">Debug Overdraw</a> - debug overdraw</li>
+  <li><a href="http://www.curious-creature.com/docs/android-performance-case-study-1.html">Android Performance Case Study</a> - Debug Performance use <code>gfxinfo</code> systrace and <code>show GPU Overdraw</code> <code>HierarchyViewer</code> <code>OpenGL traces</code></li>
+  <li><a href="http://www.curious-creature.com/2015/03/25/android-performance-case-study-follow-up/">Android Performance Case Study Follow-up</a> - Use <code>OpenGL traces</code> and UUI problems caused by transparency</li>
+  <li><a href="http://developer.android.com/guide/topics/graphics/hardware-accel.html#layers">Hardware Acceleration</a></li>
+  <li><a href="http://www.curious-creature.com/2013/09/13/optimizing-hardware-layers/">Optimizing Hardware Layers</a></li>
+  <li><p><a href="https://storage.googleapis.com/androiddevelopers/android_developers_backstage/ADB%2031%20Graphics%20Performance.mp3">Graphics Performance</a> - Podcasts on Android Performance</p><h4>Tools</h4></li>
+  <li><a href="http://developer.android.com/intl/zh-cn/tools/debugging/systrace.html">Analyzing UI Performance with Systrace</a></li>
+  <li><a href="http://developer.android.com/intl/zh-cn/tools/debugging/debugging-ui.html">Optimizing Your UI</a> - HierarchyViewer Usage</li>
+  <li><a href="http://developer.android.com/intl/zh-cn/tools/debugging/debugging-ui.html">Introduction to Systrace</a></li>
+</ul><h2>Bitmaps</h2>
+<ul>
+  <li><a href="http://developer.android.com/training/displaying-bitmaps/load-bitmap.html#load-bitmap">Loading Large Bitmaps Efficiently</a></li>
+  <li><a href="http://www.curious-creature.com/2010/12/08/bitmap-quality-banding-and-dithering/">Bitmap quality, banding and dithering</a></li>
+  <li><a href="https://plus.google.com/+ChetHaase/posts/ef6Deey6xKA">Android: bitmaps, textures and pre-multiplied pixels</a></li>
+  <li><a href="https://developer.android.com/preview/testing/performance.html">Testing Display Performance</a></li>
+</ul><h2>Memory</h2>
+<ul>
+  <li><a href="http://developer.android.com/intl/zh-cn/tools/debugging/debugging-memory.html">Investigating Your RAM Usage</a></li>
+  <li><a href="https://medium.com/google-developers/the-truth-about-preventative-optimizations-ccebadfd3eb5">The truth about Preventative Optimizations</a> - You can find some useful things from the links.</li>
+  <li><a href="https://corner.squareup.com/2015/08/a-small-leak.html">A small leak will sink a great ship</a></li>
+  <li><a href="https://github.com/square/leakcanary">LeakCanary</a> A memory leak detection library for Android and Java.</li>
+  <li><a href="http://www.csdn.net/article/2015-09-07/2825631">Android内存泄露案例分析</a></li>
+  <li><a href="https://software.intel.com/en-us/android/articles/tips-for-optimizing-android-application-memory-usage">Tips for Optimizing Android Application Memory Usage</a> - Tips</li>
+  <li><a href="http://www.vogella.com/tutorials/AndroidApplicationOptimization/article.html">Android memory and performance optimization - Tutorial</a></li>
+  <li><a href="http://www.cs.virginia.edu/kim/publicity/pldi09tutorials/memory-efficient-java-tutorial.pdf">Building Memory-efficient Java Applications</a></li>
+  <li><a href="http://www.androiddesignpatterns.com/2013/01/inner-class-handler-memory-leak.html">How to Leak a Context: Handlers &amp; Inner Classes</a></li>
+  <li><a href="https://code.facebook.com/posts/872547912839369/improving-facebook-s-performance-on-android-with-flatbuffers/">Improving Facebook's performance on Android with FlatBuffers</a></li>
+</ul><h4>Memory Tools</h4>
+<ul>
+  <li><a href="https://www.yourkit.com/java/profiler/">YourKit</a> - Performance and Memory Java Profile</li>
+  <li><a href="https://eclipse.org/mat/">MAT</a> - Memory Analysis tool for Java</li>
+  <li><a href="http://developer.android.com/intl/zh-cn/tools/debugging/ddms.html#alloc">Allocation Tracker</a></li>
+</ul><h2>CPU</h2>
+<ul>
+  <li><a href="http://developer.android.com/intl/zh-cn/training/articles/smp.html">SMP Primer for Android</a></li>
+  <li><a href="http://developer.android.com/intl/zh-cn/training/articles/perf-jni.html">JNI</a></li>
+</ul><h4>Tools</h4>
+<ul>
+  <li><a href="http://developer.android.com/tools/debugging/debugging-tracing.html">Profiling with Traceview and dmtracedump</a></li>
+</ul><h2>Battery</h2>
+<ul>
+  <li><a href="https://developer.android.com/training/monitoring-device-state/index.html">Optimizing Battery Life</a> - Android's official tutorial for Battery Optimization</li>
+</ul><h3>Network</h3>
+<ul>
+  <li><a href="https://newcircle.com/s/post/1754/2015/08/20/colt-mcanlis-better-compression-faster-networking">Better Compression = Faster Networking - Colt McAnlis' talk from SF Android</a></li>
+</ul><h1>Article Videos Tools and others that cover multiple topics</h1><h2>Performance Test</h2>
+<ul>
+  <li><p><a href="http://www.methodsandtools.com/archive/mobileloadtesting.php">Testing Performance of Mobile Apps - Part 1: How Fast Can Angry Birds Run?</a></p><h2>Articles</h2></li>
+  <li><a href="http://blog.venmo.com/hf2t3h4x98p5e13z82pl8j66ngcmry/performance-tuning-on-android">Performance Tuning On Android</a> - Venmo's experience on UI performance optimization</li>
+  <li><a href="http://developer.android.com/training/best-performance.html">Best Practices for Performance</a> - Android Official Training on Performance</li>
+  <li><a href="https://medium.com/google-developers/developing-for-android-ix-tools-375134af1098">Developing for Android</a> - Chet Haase's series,including Memory,Storage, UI Performance</li>
+  <li><a href="http://code.tutsplus.com/tutorials/detect-and-resolve-performance-problems-on-android--cms-24058">Detect and Resolve Performance Problems on Android</a> - Use multiple ways to detect and fix Android Performance Problems</li>
+  <li><a href="http://hsc.com/Blog/Best-Practices-For-Memory-Optimization-on-Android-1">Performance Tips</a> - Android's Official Perf tips</li>
+  <li><a href="https://code.facebook.com/posts/android/">Facebook Engineering blogs tagged android</a> - Including many articles on performance</li>
+</ul><h1>Tools</h1>
+<ul>
+  <li><a href="https://medium.com/google-developers/developing-for-android-ix-tools-375134af1098">Developing for Android IXTools</a></li>
+  <li><a href="https://developer.android.com/tools/performance/index.html">Performance Profiling Tools</a> - Performance Tools</li>
+  <li><a href="http://developer.android.com/intl/zh-cn/reference/android/os/StrictMode.html">StrictMode</a> - Debug Util Class for etection for Storage, Memory and others.</li>
+</ul><h2>Videos</h2>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIKEOXh5TwZEv89aofHzNCiu">Android Performance Patterns</a> - Google's official Video about Android Performance</li>
+  <li><p><a href="https://www.udacity.com/course/viewer#!/c-ud825/l-3753178711/m-3766928782">Android Performance</a> - Udacity's Video Series</p><h2>Codes</h2></li>
+  <li><a href="https://github.com/udacity/ud825-render">udacity render example</a></li>
+  <li><a href="https://github.com/square/leakcanary">leakcanary</a> - leakcanary source codes</li>
+</ul><h2>People you should follow(their work contribute to almost all of this list)</h2>
+<ul>
+  <li><a href="https://twitter.com/duhroach">Colt McAnlis</a> - Instructor of the Video at Udacity and Youtube</li>
+  <li><a href="https://twitter.com/chethaase">Chet Haase</a> - Author of the <a href="https://medium.com/google-developers/developing-for-android-introduction-5345b451567c">Developing for Android</a> series</li>
+  <li><a href="https://twitter.com/romainguy">Romain Guy</a> - former developer of android ui frameowk team</li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0-SNAPSHOT</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    
+  </body>
+</html>

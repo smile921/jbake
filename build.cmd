@@ -1,0 +1,1 @@
+./bin/jbake fm site
