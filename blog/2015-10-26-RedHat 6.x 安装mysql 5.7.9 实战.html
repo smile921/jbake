@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title> RedHat 6.x 安装mysql 5.7.9 实战</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../">JBake</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../feed.xml">Subscribe</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1> RedHat 6.x 安装mysql 5.7.9 实战</h1>
+	</div>
+
+	<p><em>26 十月 2015</em></p>
+
+	<p><ul>
+  <li>按顺序安装mysql的安装包<br/> mysql57-community-release-el6-7.noarch.rpm<br/> mysql-community-client-5.7.9-1.el6.x86_64.rpm<br/> mysql-community-common-5.7.9-1.el6.x86_64.rpm<br/> mysql-community-libs-5.7.9-1.el6.x86_64.rpm<br/> mysql-community-server-5.7.9-1.el6.x86_64.rpm</li>
+</ul>
+<pre><code>     install lib common  client server
+</code></pre>
+<ul>
+  <li>安装之后初始化<br/><code>
+ mysqld --initialize --user=mysql --datadir=/home/data/mysql/
+</code></li>
+  <li>编辑配置文件<br/><code>
+  vi my.conf datadir= xxxx
+  vi my.conf explicit_defaults_for_timestamp = TRUE
+</code></li>
+  <li><p>. 初始的时候密码是随机的，在error 日志文件中，可以以下面的方式进去修改默认密码<br/>```<br/> mysqld_safe --skip-grant-tables &amp; #用这个可以无密码登录</p><p>use mysql;<br/> update user set authentication_string=PASSWORD("1qaz") where User='root';<br/> flush privileges;<br/> quit;<br/>```</p></li>
+  <li><p>重启服务，用用名密码登录<br/><code>
+ service mysql start
+ mysql -uroot -p
+</code><br/><code>
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;1qaz&#39; PASSWORD EXPIRE  INTERVAL 600 DAY;
+flush privileges;
+use mysql;
+</code><br/><code>
+CREATE USER &#39;xshell&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;1qaz&#39;;
+flush privileges;
+</code></p><h1>note:</h1></li>
+  <li>ls -Z /home/data/mysql ls -Z /var/lib/mysql 对比这两个目录，如果有不一样，确保改成如下的权限设置<br/><code>
+	-rw-r-----. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 auto.cnf
+	-rw-r-----. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 ib_buffer_pool
+	-rw-r-----. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 ibdata1
+	-rw-r-----. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 ib_logfile0
+	-rw-r-----. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 ib_logfile1
+	drwxr-x---. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 mysql
+	drwxr-x---. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 performance_schema
+	drwxr-x---. mysql mysql unconfined_u:object_r:mysqld_db_t:s0 sys
+</code></li>
+  <li>可以使用如下命令解决：<br/><code>
+	semanage fcontext -a -t mysqld_db_t &quot;/home/data/mysql(/.*)?&quot;
+	restorecon -r -v /home/data/mysql
+</code></li>
+  <li>如果提示没有semanage 命令，可以先安装<br/><code>
+	yum update
+	yum -y install  policycoreutils-python
+</code></li>
+  <li><p>redhat默认没有可用软件源，如果可以联网可以使用下面的源（redhat6x）<br/>```<br/> vi yum.conf</p>
+  <pre><code>[uvm.edu]
+name=Red Hat Enterprise Linux 6.6
+mediaid=1411733344.627228
+metadata_expire=-1
+gpgcheck=0
+cost=500
+baseurl=http://rhnproxy1.uvm.edu/pub/redhat/rhel6-x86_64/install
+gpgkey=http://rhnproxy1.uvm.edu/pub/UVM-RPM-GPG-KEY 
+enabled=1
+</code></pre></li>
+</ul><p>```</p>
+<ul>
+  <li>参考 ref <a href="http://imysql.com/2015/07/08/mysql-57-new-feature-part-3.shtml">MySQL 5.7版本新特性</a><br/>a. 用户表 mysql.user 的 plugin字段不允许为空， 默认值是 mysql_native_password，而不是 mysql_old_password，不再支持旧密码格式；<br/>b. 增加密码过期机制，过期后需要修改密码，否则可能会被禁用，或者进入沙箱模式；<br/>c. 使用 mysql_install_db 初始化时，默认会自动生成随机密码，并且不创建除 <a href="mailto:&#114;o&#111;&#x74;&#x40;&#x6c;&#x6f;&#99;&#x61;&#x6c;h&#111;&#x73;&#116;">&#114;o&#111;&#x74;&#x40;&#x6c;&#x6f;&#99;&#x61;&#x6c;h&#111;&#x73;&#116;</a> 外的其他账号，也不创建 test 库</li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0-SNAPSHOT</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    
+  </body>
+</html>
